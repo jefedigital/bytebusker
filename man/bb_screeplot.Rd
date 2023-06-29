@@ -5,12 +5,14 @@
 \title{bb_screeplot
 Principal Component Analysis - PCA}
 \usage{
-bb_screeplot(prcomp, plot_type = "bar")
+bb_screeplot(prcomp, plot_type = "bar", title = NULL)
 }
 \arguments{
 \item{prcomp}{a stats::prcomp object}
 
 \item{plot_type}{'bar' or 'line', bar is default}
+
+\item{title}{a title}
 }
 \value{
 a ggplot barplot or lineplot

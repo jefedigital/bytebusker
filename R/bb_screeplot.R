@@ -7,9 +7,10 @@
 #'
 #' @param prcomp a stats::prcomp object
 #' @param plot_type 'bar' or 'line', bar is default
+#' @param title a title
 #' @return a ggplot barplot or lineplot
 #' @export
-bb_screeplot <- function(prcomp, plot_type='bar'){
+bb_screeplot <- function(prcomp, plot_type='bar', title=NULL){
 
   variance <- prcomp$sdev^2 / sum(prcomp$sdev^2)
 
@@ -22,7 +23,8 @@ bb_screeplot <- function(prcomp, plot_type='bar'){
     geom_text(vjust=-0.8) +
     ggtitle('PCA Scree Plot') +
     ylim(0,1) +
-    scale_x_continuous(breaks=df$principal_component)
+    scale_x_continuous(breaks=df$principal_component) +
+    ggtitle({{title}})
 
   lineplot <- df %>%
     ggplot(aes(x=principal_component, y=variance, label=round(variance,2))) +
@@ -31,7 +33,8 @@ bb_screeplot <- function(prcomp, plot_type='bar'){
     geom_text(vjust=-0.8) +
     ggtitle('PCA Scree Plot') +
     ylim(0,1) +
-    scale_x_continuous(breaks=df$principal_component)
+    scale_x_continuous(breaks=df$principal_component) +
+    ggtitle({{title}})
 
   if (plot_type == 'bar'){
     return(barplot)

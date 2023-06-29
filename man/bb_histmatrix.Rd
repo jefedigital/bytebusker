@@ -4,10 +4,12 @@
 \alias{bb_histmatrix}
 \title{bb_histmatrix}
 \usage{
-bb_histmatrix(df)
+bb_histmatrix(df, title = NULL)
 }
 \arguments{
 \item{df}{a dataframe}
+
+\item{title}{a title}
 }
 \value{
 a ggplot matrix of histograms
