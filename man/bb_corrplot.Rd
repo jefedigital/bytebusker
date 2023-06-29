@@ -3,17 +3,19 @@
 \name{bb_corrplot}
 \alias{bb_corrplot}
 \title{bb_corrplot takes a dataframe and makes a nice correlation plot
-using corrr}
+of the numeric columns using corrr}
 \usage{
-bb_corrplot(df)
+bb_corrplot(df, title = NULL)
 }
 \arguments{
 \item{df}{a dataframe}
+
+\item{title}{a title}
 }
 \value{
-a kable-formatted table
+a corrr rplot
 }
 \description{
 bb_corrplot takes a dataframe and makes a nice correlation plot
-using corrr
+of the numeric columns using corrr
 }
