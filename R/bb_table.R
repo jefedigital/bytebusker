@@ -1,4 +1,4 @@
-#' nice_table takes a dataframe and makes a nice table using kable.
+#' bb_table takes a dataframe and makes a nice table using kable.
 #'
 #' @param df a dataframe
 #' @param cap a caption
@@ -7,7 +7,7 @@
 #' @param fw a boolean T/F for full-width
 #' @return a kable-formatted table
 #' @export
-nice_table <- function(df, cap=NULL, cols=NULL, dig=3, fw=F){
+bb_table <- function(df, cap=NULL, cols=NULL, dig=3, fw=F){
   if (is.null(cols)) {c <- colnames(df)} else {c <- cols}
   table <- df %>%
     kable(caption=cap, col.names=c, digits=dig) %>%

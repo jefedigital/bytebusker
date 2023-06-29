@@ -1,4 +1,4 @@
-#' gg_screeplot
+#' bb_screeplot
 #' Principal Component Analysis - PCA
 #'
 #' This function takes a prcomp object and returns a simple scree plot
@@ -9,7 +9,7 @@
 #' @param plot_type 'bar' or 'line', bar is default
 #' @return a ggplot barplot or lineplot
 #' @export
-gg_screeplot <- function(prcomp, plot_type='bar'){
+bb_screeplot <- function(prcomp, plot_type='bar'){
 
   variance <- prcomp$sdev^2 / sum(prcomp$sdev^2)
 
