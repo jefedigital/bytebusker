@@ -15,6 +15,5 @@ bb_corrplot(df, title = NULL)
 a corrr rplot
 }
 \description{
-Takes a dataframe and makes a nice correlation plot
-of the numeric columns using corrr
+Takes a dataframe and makes a nice correlation plot of the numeric columns using corrr
 }

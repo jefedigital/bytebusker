@@ -1,7 +1,6 @@
 #' bb_corrplot
 #'
-#' Takes a dataframe and makes a nice correlation plot
-#' of the numeric columns using corrr
+#' Takes a dataframe and makes a nice correlation plot of the numeric columns using corrr
 #'
 #' @param df a dataframe
 #' @param title a title

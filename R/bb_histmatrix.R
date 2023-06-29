@@ -1,7 +1,6 @@
 #' bb_histmatrix
 #'
-#' Takes a dataframe and returns a matrix of ggplot
-#' geom_histograms of all the numeric columns.
+#' Takes a dataframe and returns a matrix of ggplot geom_histograms of all the numeric columns.
 #'
 #' @param df a dataframe
 #' @param title a title
