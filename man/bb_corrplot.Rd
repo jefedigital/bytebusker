@@ -2,8 +2,7 @@
 % Please edit documentation in R/bb_corrplot.R
 \name{bb_corrplot}
 \alias{bb_corrplot}
-\title{bb_corrplot takes a dataframe and makes a nice correlation plot
-of the numeric columns using corrr}
+\title{bb_corrplot}
 \usage{
 bb_corrplot(df, title = NULL)
 }
@@ -16,6 +15,6 @@ bb_corrplot(df, title = NULL)
 a corrr rplot
 }
 \description{
-bb_corrplot takes a dataframe and makes a nice correlation plot
+Takes a dataframe and makes a nice correlation plot
 of the numeric columns using corrr
 }

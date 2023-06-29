@@ -18,6 +18,6 @@ bb_screeplot(prcomp, plot_type = "bar", title = NULL)
 a ggplot barplot or lineplot
 }
 \description{
-This function takes a prcomp object and returns a simple scree plot
+Takes a prcomp object and returns a simple scree plot
 using ggplot. Specify 'bar' or 'line' as second parameter.
 }

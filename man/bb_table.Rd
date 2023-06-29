@@ -2,7 +2,7 @@
 % Please edit documentation in R/bb_table.R
 \name{bb_table}
 \alias{bb_table}
-\title{bb_table takes a dataframe and makes a nice table using kable.}
+\title{bb_table}
 \usage{
 bb_table(df, cap = NULL, cols = NULL, dig = 3, fw = F)
 }
@@ -21,5 +21,5 @@ bb_table(df, cap = NULL, cols = NULL, dig = 3, fw = F)
 a kable-formatted table
 }
 \description{
-bb_table takes a dataframe and makes a nice table using kable.
+Takes a dataframe and makes a nice table using kable.
 }

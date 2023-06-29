@@ -1,7 +1,7 @@
 #' bb_screeplot
 #' Principal Component Analysis - PCA
 #'
-#' This function takes a prcomp object and returns a simple scree plot
+#' Takes a prcomp object and returns a simple scree plot
 #' using ggplot. Specify 'bar' or 'line' as second parameter.
 #'
 #'

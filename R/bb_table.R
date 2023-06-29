@@ -1,4 +1,6 @@
-#' bb_table takes a dataframe and makes a nice table using kable.
+#' bb_table
+#'
+#' Takes a dataframe and makes a nice table using kable.
 #'
 #' @param df a dataframe
 #' @param cap a caption

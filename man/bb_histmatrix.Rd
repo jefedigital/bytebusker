@@ -15,6 +15,6 @@ bb_histmatrix(df, title = NULL)
 a ggplot matrix of histograms
 }
 \description{
-This function takes a dataframe and returns a matrix of ggplot
+Takes a dataframe and returns a matrix of ggplot
 geom_histograms of all the numeric columns.
 }
