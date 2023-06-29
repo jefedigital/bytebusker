@@ -1,0 +1,16 @@
+Package: bytebusker
+Title: Helpful Functions
+Version: 1.0
+Authors@R: 
+    person("Jeff", "Parks", , "jeff@accolade.digital", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Some helpful functions.
+License: `use_mit_license()`
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Depends:
+  dplyr,
+	ggplot2,
+	kableExtra,
+	tidyr
