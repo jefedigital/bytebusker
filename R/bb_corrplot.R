@@ -1,9 +1,8 @@
 #' bb_corrplot takes a dataframe and makes a nice correlation plot
-#' using corrr
+#' of the numeric columns using corrr
 #'
 #' @param df a dataframe
-
-#' @return a kable-formatted table
+#' @return a corrr rplot
 #' @export
 bb_corrplot <- function(df){
 
