@@ -22,18 +22,16 @@ bb_screeplot <- function(prcomp, plot_type='bar', title=NULL){
     geom_col() +
     geom_text(vjust=-0.8) +
     ggtitle('PCA Scree Plot') +
-    ylim(0,1) +
-    scale_x_continuous(breaks=df$principal_component) +
+    ylim(0,max(variance)) +
     ggtitle({{title}})
 
   lineplot <- df %>%
     ggplot(aes(x=principal_component, y=variance, label=round(variance,2))) +
     geom_point() +
     geom_line() +
-    geom_text(vjust=-0.8) +
+    # geom_text(vjust=-0.8) +
     ggtitle('PCA Scree Plot') +
-    ylim(0,1) +
-    scale_x_continuous(breaks=df$principal_component) +
+    ylim(0,max(variance)) +
     ggtitle({{title}})
 
   if (plot_type == 'bar'){
