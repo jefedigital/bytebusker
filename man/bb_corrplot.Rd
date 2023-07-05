@@ -4,10 +4,12 @@
 \alias{bb_corrplot}
 \title{bb_corrplot}
 \usage{
-bb_corrplot(df, title = NULL)
+bb_corrplot(df, threshold = 0, title = NULL)
 }
 \arguments{
 \item{df}{a dataframe}
+
+\item{threshold}{a threshold 0-1 to filter absolute results}
 
 \item{title}{a title}
 }
