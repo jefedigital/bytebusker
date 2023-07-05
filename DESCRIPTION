@@ -14,4 +14,5 @@ Depends:
   dplyr,
 	ggplot2,
 	kableExtra,
+	stringr,
 	tidyr
