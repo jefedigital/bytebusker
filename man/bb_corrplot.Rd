@@ -4,7 +4,7 @@
 \alias{bb_corrplot}
 \title{bb_corrplot}
 \usage{
-bb_corrplot(df, threshold = 0, title = NULL)
+bb_corrplot(df, threshold = 0, title = "Corrplot")
 }
 \arguments{
 \item{df}{a dataframe}
