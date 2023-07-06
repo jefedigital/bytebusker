@@ -19,7 +19,7 @@ bb_regression_metrics <- function(pred,obs,dig=3,title=NA){
   rsq <- rsq_vec(obs, pred, na_rm = TRUE)
   mape <- mape_vec(obs, pred, na_rm = TRUE)
 
-  df <- as.data.frame(c(rmse=rmse, mae=mae, rsq=rsq, mape=mape))
+  df <- as.data.frame(c(rsq=rsq, rmse=rmse, mae=mae, mape=mape))
   names(df) <- 'metrics'
 
   return(bb_table(df,dig={{dig}},title={{title}}))
