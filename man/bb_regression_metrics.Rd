@@ -4,7 +4,7 @@
 \alias{bb_regression_metrics}
 \title{bb_regression_metrics}
 \usage{
-bb_regression_metrics(pred, obs, dig = 3, cap = NA)
+bb_regression_metrics(pred, obs, dig = 3, cap = NA, colname = "metrics")
 }
 \arguments{
 \item{pred}{a vector of predicted values}
@@ -14,6 +14,8 @@ bb_regression_metrics(pred, obs, dig = 3, cap = NA)
 \item{dig}{optional number of decimal places for rounding - default 3}
 
 \item{cap}{an optional caption}
+
+\item{colname}{an optional column label}
 
 \item{fw}{optional boolean T/F for full-width - default F}
 }
