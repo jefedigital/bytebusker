@@ -4,12 +4,12 @@
 #'
 #' @param pred a vector of predicted values
 #' @param obs a vector of observed values
-#' @param title an optional title
+#' @param cap an optional caption
 #' @param dig optional number of decimal places for rounding - default 3
 #' @param fw optional boolean T/F for full-width - default F
 #' @return a kable-formatted table
 #' @export
-bb_regression_metrics <- function(pred,obs,dig=3,title=NA){
+bb_regression_metrics <- function(pred, obs, dig=3, cap=NA){
 
   obs <- as.vector(obs)
   pred <- as.vector(pred)
@@ -22,5 +22,5 @@ bb_regression_metrics <- function(pred,obs,dig=3,title=NA){
   df <- as.data.frame(c(rsq=rsq, rmse=rmse, mae=mae, mape=mape))
   names(df) <- 'metrics'
 
-  return(bb_table(df,dig={{dig}},title={{title}}))
+  return(bb_table(df, dig={{dig}}, cap={{cap}}))
 }
