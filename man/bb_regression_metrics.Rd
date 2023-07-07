@@ -4,24 +4,18 @@
 \alias{bb_regression_metrics}
 \title{bb_regression_metrics}
 \usage{
-bb_regression_metrics(pred, obs, dig = 3, cap = NA, colname = "metrics")
+bb_regression_metrics(pred, resp, colname = "metrics")
 }
 \arguments{
 \item{pred}{a vector of predicted values}
 
-\item{obs}{a vector of observed values}
-
-\item{dig}{optional number of decimal places for rounding - default 3}
-
-\item{cap}{an optional caption}
-
 \item{colname}{an optional column label}
 
-\item{fw}{optional boolean T/F for full-width - default F}
+\item{obs}{a vector of observed values}
 }
 \value{
-a kable-formatted table
+a df
 }
 \description{
-Takes vectors of predictions and observations from regression models, returns common error metrics in a table using yardstick.
+Takes vectors of predictions and observations from regression models, returns common error metrics in a df using yardstick.
 }
