@@ -4,7 +4,7 @@
 \alias{bb_table}
 \title{bb_table}
 \usage{
-bb_table(df, cap = NULL, cols = NULL, dig = 3, fw = F)
+bb_table(df, cap = NULL, cols = NULL, dig = 3, fw = FALSE)
 }
 \arguments{
 \item{df}{a dataframe}

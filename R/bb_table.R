@@ -9,7 +9,7 @@
 #' @param fw a boolean T/F for full-width
 #' @return a kable-formatted table
 #' @export
-bb_table <- function(df, cap=NULL, cols=NULL, dig=3, fw=F){
+bb_table <- function(df, cap=NULL, cols=NULL, dig=3, fw=FALSE){
   if (is.null(cols)) {c <- colnames(df)} else {c <- cols}
   table <- df %>%
     kable(caption=cap, col.names=c, digits=dig) %>%
