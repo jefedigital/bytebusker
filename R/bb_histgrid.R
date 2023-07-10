@@ -1,14 +1,14 @@
-#' bb_histmatrix
+#' bb_histgrid
 #'
-#' Takes a dataframe and returns a matrix of ggplot geom_histograms of all the numeric columns.
+#' Takes a dataframe and returns a grid of histograms of all the numeric columns.
 #'
 #' @param df a dataframe
 #' @param title a title
-#' @return a ggplot matrix of histograms
+#' @return a ggplot grid of histograms
 #' @export
-bb_histmatrix <- function(df, title=NULL){
+bb_histgrid<- function(df, title=NULL){
 
-  hist_matrix <- df[,sapply(df, is.numeric)] %>%
+  histgrid <- df[,sapply(df, is.numeric)] %>%
     pivot_longer(cols = everything(),
                  names_to='variables',
                  values_to='values') %>%
@@ -17,5 +17,5 @@ bb_histmatrix <- function(df, title=NULL){
     facet_wrap(~ variables, scales='free') +
     ggtitle({{title}})
 
-  return(hist_matrix)
+  return(histgrid)
 }
